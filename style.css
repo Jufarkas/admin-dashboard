@@ -39,7 +39,7 @@ li {
 
 .header-search {
     display: grid;
-    grid-template-columns: 5fr repeat(2, 1fr) 2fr;
+    grid-template-columns: 5fr repeat(2, 60px) 1fr;
     align-items: center;
     justify-items: center;
     margin-right: 25px;
@@ -57,6 +57,8 @@ li {
 }
 
 .search-bar {
+    font-size: 16px;
+    padding: 0 15px;
     width: 90%;
     background-color: #eeeeee;
     border: none;
