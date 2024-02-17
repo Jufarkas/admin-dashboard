@@ -120,7 +120,7 @@ h1 .sidebar-svg {
 }
 
 .header-search .username {
-    padding-left: 20px;
+    padding-left: 12px;
     justify-self: start;
 }
 
@@ -140,9 +140,10 @@ h1 .sidebar-svg {
 }
 
 .header-sub-search h3 {
+    font-weight: 500;
     display: flex;
-    align-items: center;
-    margin: 0 0 0 15px;
+    align-items: flex-end;
+    margin: 0 0 -6px 15px;
     padding: 0;
 }
 
@@ -299,13 +300,35 @@ h1 .sidebar-svg {
     margin-right: 15px;
     background-color: rgb(255, 255, 255);
     border-radius: 6px;
+    padding-left: 10px;
+    padding-bottom: 40px;
+    gap: 10px;
 }
 
 .trending-content {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: 40px;
     height: 30px;
-    margin: 25px 0;
+    margin: 20px 0;
     padding: 10px;
-    border: 2px solid black;
     background-color: rgb(255, 255, 255);
     width: 80%;
+}
+
+.trending-content p {
+    color: rgb(100, 100, 100);
+    grid-area: 2 / 2 / 3 / 3;
+    margin: 0;
+}
+
+.trending-content h4 {
+    font-weight: 500;
+    margin: 15px 0 0 0;
+}
+
+.trending-content .small {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
 }
